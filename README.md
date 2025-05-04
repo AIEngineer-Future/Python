@@ -17,3 +17,25 @@
 6.Automatic Memory Management: Garbage collection handled internally.
 
 # History Of Python
+
+1.Creator: Guido van Rossum
+2.Start Year: 1989
+3.First release: 1991
+4.Developed at: Centrum Wiskunde & Informatica(CWI),Netherlands
+5.Motivation: To address issues found in ABC language and make programming easy.
+
+# Versions of Python
+
+1.Python 1.x: Initial release(1991)
+2.Python 2.x: Improved features(2000),not fully compatible with 3.x
+3.Python 3.x: Major changes(2008),modern standard
+4.Latest Stable Version(2025): Python 3.12+
+Note: Python 2.x support officially ended on January 1, 2020.
+
+# Implementations of Python
+
+1.CPython: Default,written in C language.
+2.PyPy: Faster execution using Just-In-Time(JIT) compiler.
+3.Jython: Python code exceution on Java Virtual Machine(JVM)
+4.IronPython: Python integrated with .NET Framework.
+5.MicroPython: Designed for microcontrollers(IoT applications).
