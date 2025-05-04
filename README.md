@@ -39,3 +39,41 @@ Note: Python 2.x support officially ended on January 1, 2020.
 3.Jython: Python code exceution on Java Virtual Machine(JVM)
 4.IronPython: Python integrated with .NET Framework.
 5.MicroPython: Designed for microcontrollers(IoT applications).
+
+##====================================================================##
+                     Build Process of Python
+##===================================================================##
+
+# PVM (Python Virtual Machine)
+
+1.PVM is the runtime engine of Python.
+2.It reads .pyc(compiled bytecode) files and executes them.
+3.Provides platform independence.
+4.Handle memory allocation,garbage collection, and exception handling.
+
+# Build Process of Python Code
+
+1.Source Code(.pyc):
+    Developer writes Python code in a .py file.
+
+2.Lexical Analysis:
+    The Python interpreter scans the code and breaks it into tokens.
+
+3.Parsing & AST Generation:
+    Tokens are parsed and transformed into an Abstract Syntax Tree(AST).
+    Checks for syntax errors during this step.
+
+4.Compilation to Bytecode:
+    AST is compiled into Python bytecode(.pyc files).
+    Bytecode is platform-independence stored in __pycache__ folder.
+
+5.Execution by PVM:
+    The Python Virtual Machine reads the bytecode and executes it line-by-line.
+    Handles runtime actions such as memory management,method calls,and control flow.
+
+# Complete Python Toolchain(Execution Flow)
+
+1.Editor/IDE:
+    
+
+
