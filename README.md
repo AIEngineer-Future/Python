@@ -186,11 +186,55 @@ In Python,everthing is an object,and every object belongs to some class or data 
 
     x = 11
     print(sys.getsizeof(x)          # 28 bytes
+    
 
 # Size of Different Data Types:
 
     Data Type                      Example                       Size(Bytes)
     
+    int                            11                             28
+    float                          3.14                           24
+    bool                           TRUE                           28
+    str                            "Marvellous"                   52(variable)
+    list                           [11,21,51]                     88
+    tuple                          (1,12,151)                     72
+    dict                           {"a":1}                        232
+    set                            {1,2}                          216
+
+# id() Function to Get Information About Variable:
+
+    Every object in Python has a unique id(memory address).
+    id() returns that address as an integer.
+
+# Example:
+    a = 100
+    b = a
+
+    print(id(a))         # Memory location of 'a'
+    print(id(b))         # Memory location of 'b'
+
+# Code to explain the above concepts:
+
+    import sys
+
+    # variable Creation
+    x = 11
+    name = "Marvellous"
+
+    # Checking type
+    print(type(x))         # <class 'int'>
+    print(type(x))         # <class 'str'>
+
+    # Checking size 
+    print(sys.getsizeof(x))      # Size in bytes
+    print(sys.getsizeof(name))
+
+    # Checking id (memory address)
+    print(id(x))
+    print(id(name))
+
+# 
+
     
 
 
