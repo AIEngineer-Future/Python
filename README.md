@@ -233,7 +233,75 @@ In Python,everthing is an object,and every object belongs to some class or data 
     print(id(x))
     print(id(name))
 
-# 
+##=============================================================================##
+                              Python Modules
+##=============================================================================##
+
+# Module in Python:
+    A module in Python is simply a file containing Python Code - Variable,functions,classes - that you can reuse in other Python programs.
+    File with .py extension is treated as a module.
+
+# Use of Modules:
+    1.Reusability: Write once,use anywhere.
+    2.Organization: keep code modular and manageable.
+    3.Avoid Code Duplication: Common code can be placed in a module.
+    4.Easier Maintenance & Debugging
+
+# Types of Modules
+
+Type                                 Description                          Example
+Build-in                    Pre-installed with Python                   math.OS.sys
+User-defined                Created by users as .py files               Marvellous.py
+Thired-party              Installed via pip from external packages      numpy,pandas,flask
+
+# Creating and Using a User-Defined Module:
+
+# Step 1: Create a Module
+File: Marvellous.py
+def Display():
+  print("Jay Ganesh")
+
+PI = 3.14159
+# Step 2: Import and Use in Another file
+File:main.py
+import Marvellous
+
+Marvellous.Display()
+print("value of PI:",Marvellous.PI)
+
+Output:
+Jay Ganesh...
+Value of pi:3.14159
+
+This is how we import and use our own code written in other files.
+
+# Ways to Import Modules:
+       Syntax                                         Usage
+import module_name                         Imports whole module
+from module_name import x                  Imports specific object/function
+from module_name import *                  Imports everything(not recommended)
+import module_name as alias                Imports with alias name for shorter usage
+
+# Example:
+from Marvellous import Display
+
+Display()
+
+# Build-in Modules:
+
+# Example with math:
+import math
+
+print(math.sqrt(16))           # Output: 4.0
+print(math.pi)                 # Output: 3.141592653589793
+
+# Thired-party Module:
+# Example with numpy(after installation):
+
+pip install numpy
+
+
+
 
     
 
